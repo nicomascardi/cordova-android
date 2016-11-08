@@ -172,6 +172,8 @@ public class CordovaActivity extends Activity {
                 ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.MATCH_PARENT));
 
+		appView.getView().setLayerType(View.LAYER_TYPE_SOFTWARE, null);
+		
         setContentView(appView.getView());
 
         if (preferences.contains("BackgroundColor")) {
